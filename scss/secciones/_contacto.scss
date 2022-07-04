@@ -1,0 +1,119 @@
+.contacto {
+    grid-area: contacto;
+    @extend %estilo-flexcolumn;
+    padding: 20px;
+    padding-left: 90px;
+    background: url("../img/contacto.jpeg") no-repeat fixed;
+    background-size: cover;
+
+    h1 {
+        padding-left: 20px;
+        margin-bottom: 30px;
+        font-style: italic;
+        font-size: 35px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    h3 {
+        padding-left: 15px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        padding-left: 20px;
+        margin-bottom: 15px;
+        font-weight: bold;
+        margin-right: 30px;
+        font-family: $roboto;
+    }
+
+    a {
+        padding-left: 20px;
+        padding-bottom: 20px;
+        font-weight: bold;
+        color: rgb(38, 99, 2);
+    }
+
+    form {
+        @extend %estilo-flexcolumn;
+        padding: 10px;
+
+        .form-floating {
+            input {
+                margin-top: 10px;
+                margin-bottom: 10px;
+
+                &:focus {
+                    border: solid 2px darkblue;
+                    outline: none;
+                    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+                }
+            }
+
+            textarea {
+                margin-bottom: 10px;
+                margin-top: 12px;
+
+                &:focus {
+                    border: solid 2px darkblue;
+                    outline: none;
+                    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+                }
+            }
+        }
+
+        .submit {
+            background-color: white;
+            padding: 3px 8px 3px 8px;
+            margin-left: 165px;
+            margin-right: 165px;
+
+            &:hover {
+                background-color: rgb(244, 248, 16);
+                color: black;
+            }
+        }
+    }
+}
+
+.unirse {
+    grid-area: unirse;
+    @extend %estilo-flexcolumn;
+    align-items: center;
+    padding: 20px;
+    background: url("../img/contacto.jpeg") no-repeat fixed;
+    background-size: cover;
+
+    h1 {
+        font-family: $grape-nuts;
+        font-size: 50px;
+        padding-bottom: 30px;
+        font-weight: bold;
+    }
+
+    input {
+        &:focus {
+            border: solid 2px darkblue;
+            outline: none;
+            box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+        }
+    }
+
+    .submit2 {
+        border-radius: 50px;
+        padding: 8px 15px 8px 15px;
+        font-family: $grape-nuts;
+        font-size: 25px;
+        margin-left: 250px;
+        margin-right: 250px;
+        font-weight: bold;
+        background-color: white;
+
+        &:hover {
+            background-color: rgb(244, 248, 16);
+            color: black;
+            transform: scale(1.3, 1.3);
+            transition: .4s;
+        }
+    }
+}

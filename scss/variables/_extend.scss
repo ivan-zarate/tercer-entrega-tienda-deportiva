@@ -1,0 +1,38 @@
+%estilo-flexrow {
+    display: flex;
+    flex-direction: row;
+}
+
+%estilo-flexcolumn {
+    display: flex;
+    flex-direction: column;
+}
+
+%texto-index {
+    text-align: center;
+    font-weight: bold;
+    font-family: $roboto;
+}
+
+%img-introduccion {
+    width: 20rem;
+    height: 12rem;
+}
+
+%parrafo-introduccion {
+    margin-left: 20vw;
+    margin-top: 4rem;
+    font-size: 50px;
+    font-family: $grape-nuts;
+    font-style: italic;
+    font-weight: bolder;
+    text-shadow: 3px 3px 4px grey;
+}
+
+@mixin estilo-banner ($josefin, $color-bannerh1) {
+    font-family: $josefin;
+    color: $color-bannerh1;
+    font-size: 35px;
+    font-weight: bolder;
+    margin-top: 10px;
+}

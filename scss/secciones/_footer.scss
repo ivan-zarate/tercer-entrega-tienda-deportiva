@@ -1,0 +1,16 @@
+.card-footer ul {
+    @extend %estilo-flexrow;
+    justify-content: center;
+    list-style: none;
+    padding: 0px;
+
+    li {
+        padding: 15px;
+
+        img {
+            border: solid 1px black;
+            max-width: 2em;
+            max-height: 2em;
+        }
+    }
+}

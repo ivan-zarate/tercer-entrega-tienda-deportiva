@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import './variables/_colores.scss';
+@import './variables/_tipografia.scss';
+@import './variables/_extend.scss';
+
+@import './secciones/_grilla.scss';
+@import './secciones/_nav.scss';
+@import './secciones/_banner.scss';
+@import './secciones/_index.scss';
+@import './secciones/_footer.scss';
+@import './secciones/_card.scss';
+@import './secciones/_genero.scss';
+@import './secciones/_contacto.scss';
+@import './secciones/_media_queries.scss';
+

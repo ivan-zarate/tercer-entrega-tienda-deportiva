@@ -1,0 +1,66 @@
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .5fr .5fr 5.5fr 2.6fr 4.8fr .5fr;
+    grid-template-areas:
+        "nav nav nav nav"
+        "banner banner banner banner"
+        "seccion1 seccion1 seccion1 seccion1"
+        "seccion2 seccion2 seccion2 seccion2"
+        "seccion3 seccion3 seccion3 seccion3"
+        "footer footer footer footer";
+}
+
+.promociones {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 3fr;
+    gap: 16px;
+    justify-items: center;
+    justify-content: center;
+}
+
+.grilla footer,
+.grilla-genero footer,
+.grilla-contacto footer {
+    grid-area: footer;
+    @extend %estilo-flexcolumn;
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+.grilla-genero {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .3fr .8fr 7.5fr 1.6fr .8fr .5fr;
+    grid-template-areas:
+        "nav nav nav nav"
+        "introduccion introduccion introduccion introduccion"
+        "fondo-genero fondo-genero fondo-genero fondo-genero"
+        "carousel carousel carousel carousel"
+        "fondo-pago fondo-pago fondo-pago fondo-pago "
+        "footer footer footer footer";
+}
+
+.promociones-genero {
+    padding: 20px;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .8fr .8fr .8fr;
+    gap: 16px;
+}
+
+.grilla-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .5fr 2fr 2fr .4fr;
+    grid-template-areas:
+        "nav nav nav nav"
+        "contacto contacto unirse unirse"
+        "contacto contacto unirse unirse"
+        "footer footer footer footer";
+}

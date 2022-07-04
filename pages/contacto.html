@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- insertamos keywords y una descripcion -->
+    <meta name="keywords" content="atencion, contactos, whatsapp, unirse, consultas">
+    <meta name="description" content="¿Tenés alguna duda o consulta?">
+    <!-- Logo -->
+    <link rel="shortcut icon" href="../img/logook.png">
+    <!-- Animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Grape+Nuts&family=Josefin+Sans&family=Roboto+Serif:ital,opsz,wght@1,8..144,300&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Tienda Deportiva | Contacto </title>
+
+</head>
+
+<body>
+    <!-- Diagramamos con Bootstrap el nav -->
+    <div class="grilla-contacto">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a href="../index.html" class="logo">
+                    <img src="../img/logook.png" alt="logo silueta corredores">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./hombre.html">HOMBRE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./mujer.html">MUJER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./niños.html">NIÑOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Colocamos texto y campos en Contacto -->
+        <section class="contacto">
+            <h1>Atención al cliente</h1>
+            <h3>¿Tenés alguna duda o consulta?</h3>
+            <p>Comunicate con nosotros a través de las siguientes vías:</p>
+            <p>Horario de atención: Lunes a Sábados de 8hs a 22:30hs.</p>
+            <p>Teléfono: 0810-xxx-xxxx</p>
+            <a href="https://web.whatsapp.com/" target="_blank">WhatsApp: 54911xxxxxxxx</a>
+            <!-- Utilizamos Bootstrap para el grupo de inputs -->
+            <form action="#" method="get">
+                <div class="row g-2">
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingInputGrid"
+                                placeholder="Nombre y Apellido" value="Juan Perez">
+                            <label for="floatingInputGrid">Nombre y Apellido</label>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="floatingInputGrid"
+                                placeholder="name@example.com" value="tateti@gmail.com">
+                            <label for="floatingInputGrid">Direccion de Email</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                        style="height: 150px"></textarea>
+                    <label for="floatingTextarea2">Comentarios</label>
+                </div>
+                <input type="submit" value="Enviar" class="submit">
+            </form>
+        </section>
+        <!-- Colocamos texto y campos en unirse -->
+        <section class="unirse">
+            <h1>¡Únetenos!</h1>
+            <!-- Utilizamos Bootstrap para el grupo de inputs -->
+            <form action="#" method="GET">
+                <div class="row mb-3">
+                    <label for="inputText3" class="col-sm-2 col-12 col-form-label">Nombre</label>
+                    <div class="col-sm-10 col-12">
+                        <input type="text" class="form-control" id="inputText3">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="inputText3" class="col-sm-2 col-12 col-form-label">Apellido</label>
+                    <div class="col-sm-10 col-12">
+                        <input type="text" class="form-control" id="inputText3">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="inputEmail3" class="col-sm-2 col-12 col-form-label">Email</label>
+                    <div class="col-sm-10 col-12">
+                        <input type="email" class="form-control" id="inputEmail3">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="inputPassword3" class="col-sm-2 col-12 col-form-label">Password</label>
+                    <div class="col-sm-10 col-12">
+                        <input type="password" class="form-control" id="inputPassword3">
+                    </div>
+                </div>
+                <fieldset class="row mb-3">
+                    <legend class="col-form-label col-sm-2 col-12 pt-0">Género</legend>
+                    <div class="col-sm-10 col-12" id="distribucion">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sexo" id="gridRadios1" value="Hombre"
+                                checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                <span>Hombre</span>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sexo" id="gridRadios2" value="Mujer">
+                            <label class="form-check-label" for="gridRadios2">
+                                <span>Mujer</span>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sexo" id="gridRadios3" value="Otro">
+                            <label class="form-check-label" for="gridRadios3">
+                                <span>Otro</span>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="row mb-3">
+                    <div class="col-12 col-sm-10 offset-sm-2">
+                        <div class="col-12 form-check">
+                            <input class="col-12 form-check-input" type="checkbox" id="gridCheck1">
+                            <label class="col-12 form-check-label" for="gridCheck1">
+                                <span>Subscribirme al Newsletter</span>
+                            </label>
+                        </div>
+                        <div class="col-12 form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                            <label class="form-check-label" for="gridCheck1">
+                                <span>Acepto los términos y condiciones</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="Unirse" class="submit2">
+            </form>
+        </section>
+        <footer class="card-footer">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="data:image/png;base64,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"
+                            data-deferred="1" jsname="Q4LuWd" width="180" height="180"
+                            alt="8 ideas de Facebook | simbolos de redes sociales, icono de facebook, iconos  de redes sociales"
+                            data-iml="1014.5" data-atf="false">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://web.whatsapp.com/" target="_blank">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEUb10H///8A1TMA1S4A1jYV1z4P1jsJ1jn7//zl+ukA1Cru/PF85Y35/vqx77uR6Z/p++z0/fZq4n7g+eQs2U2k7bDF88135Ii08L7N9dTX99258cLA8shV322o7bNc4HKc66lK3WSI55fS9thj4XiT6aFz44U83FlN3WUl2Ukz2lND3F2D5pOf7KvK9dLb+OFtV+HFAAAMq0lEQVR4nO1d11rrvBI1Kpbj9AqkV0IKyfu/3UkoG2Y0cgljh/98WhfsfQGWRmW0pmgUBB4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh6lQ18RhuH7v/fuDC90aIQ0wa63Pywms8nisO3tglAKFf4fCKqvsm3Xx+lzt1Jt1x8+ELWrre6wsewcdCzMf1dMHYo4eGyc/wlmI2pXRsv9f1NKrdSu0+g6ZfuJ6uixZ0R47y7ngTZy2xxmku4L3f6rUP+VmQylrj1HueR7x3nZu+ijvw8TT0bujZeCU0f+9YlU5qVyq3jvaDcD8YdlVGEtm25JQnWz+6syGrls/Vq+K9r9QNxbGAKhfGyzyHdFNFd/TedocVixyXdFa/23lqoK+qzyXTHe/52lquOXKruADw/1ZvxHptEEg/TeDp/mtc5ssd+Fwf4w6TxuGqt2KivobtW9hbtCTJI1aGu8XO/lxVYy76Zh8G4kGiVkvJscG5VEMaOavLd4lxXaTOhhdbB8DaXLDrzajerwOEriCE/3ZuRhmLBCRzOdzqYvFqRZTN08r7u/60pVry4VE61qQmYdfi3iztgp5OMdV6pYOzpVn27jfEd2KHcb12g17yairDnke+vdcFxrESwdMvbvJKKkdUx7Ht5IR7QSNVovP92F4Mgp2ZnprfK9Q8kmeXyc7uDJEU9UT4YT+cuuiP2Y/HBQtoiyQXQjOqrfn15arKmlOizZ+JcU035WPEeXiakNcCqViJNKZvPbBfrj+y+ErflUokYVj3b71QnnGKs94Yws79BQxEF/0rxGuRbESm2WtFDDAzG8/KZcTPCJl3I4qrJtgUJ4FcEJo14ZCjUeWQ0fi9kgYmKd/ucStqKwF0+nqO1hthZRbRQuYriwxnVW3P43PUvEwreisZzahc3ge3NbbDbW98VuRZusLYvV4GpibcW4yPbCV9zepuh9ITqljqnCa3RavG6zVFu9wCNDLFFjwzJ4lMXDR4W1qnuID7d3pVg06oxEnBXlYZTYNu2UQ6LCLRrZSkE7MZwhAfuOhowSShnDN9AK2zLNYoY2RotlSAuoxMtbf745vkxiNhnxIVUvJLoYYiJMqzRR+3dGt1/ZRIwRt5kXsU7FKksjwL3RZVNEBp2K1QIcU3gXtsj8QuRi7LCtJoHiIwXsRNwE2Xk5h7/0zHZy6S1k/C32OcR8bUD1XVmW1ZatI2IDv3zknkSJppBi+DZrfXji0wgCKpsqMwHXIez5mJrC2E4XiviygRWijMzERiEHKTWFFmu9glEjKMhsyEG+HRJOz5hYfLpHxThbfGczGuWI9cDAO4w6ygWdUsN3YOgdnMQaJ7FBvadCCDqgQ3/PjLrmDXx5xblMNew9NS8WqfvCgW0x6X1U0Jdx76vU8qC88O9o8E2ifAZfnvNpMQGp/ZTqs4Ct/wCfhAZaUUM+CQ20m8jVQfj6P8F4YEj4ZTZtqnvgu12STSBK8AMtRl0DQ+trrkMfLQ56TrRTQsYDI4TeU7YtjkaOZNM6cEvIeGBoQE7p1XQDoIFdIZdGkoQPCz4L4wQ+zLQR0TakGFuQuEofHtmWKaLfTB82R/BVB1kyCWnCbBoB00emjYgom4NJKPc9pxUjgYQbkYm4QeO34jjdsJfjGy1OIwB6pas8cygBKXWZZdiC/Idoz2mqwmbaLEEaHQCjZeOYw9AK9H1ixupQQW5FFkNfL8A3XVaZ3tGqpsbru9XbTL3JBfMCvuk82+iNyB5BVcCCYjEv4Mp3+w7QSHyAPxctBgyfdGrmBTSd3E48tF/fwcjX/nUHKNMzRwPwkyf3oEk7lYhVjX52B5zOXY59CA3rkXvQkBJ4KCZ+okDgoMLRgARkJYknxZaZz2c3/YMBzJSFTQhg4JMejE/YR2KFP6cAGqtVjiMfZkH1k9Qzsm0eish9gV4xlgwpDdSzi9J8tG6FZvhzX1AbDMEt5OldJu4s+4oCy4EF+gP1GYNxjdhYMk3SOytzkZm1BXoPPv9a8hwSMdKHA++ZiGgyi987+z68QFrKpspbZwcq7IgjyAw1zVuKhHpvxdhYIyhBCMwnFgMxx2lxhZW/xJy5bMA+qHJk1sG8uXTfD3EjaskoIjR1WhyflCBTKENsWdjhfEYRFQgisvBSAUyGDNcBdM++QsgnIjTmWGwLSObbGRzpykpcvujghNVtZI4r6dDUcWQP5gN0M0dZloUg/G5vzntD4jgcr0XWyYAhBpZ8nax+mp+QxAXTgSPhVL4nO50fZSaXiw7AFmCJTSKqm827FRMe8NaB6o76ygisHsMM10RRb1449iHyv7gSg9EfaSokXLPvYOr999fb8/Rb7vA4jHiiWtDnnTHdMNxTySfjHp5GGO5oN7YpF1GR3uNxk8BQQSuj2jM4/fyjSzWocOwbv+NtYvI09Km0eA4heMaS+VAUjM1Qr1gdfqxERflYV2t3kSh0IYLJ+oRc92GZVX2ZV7o01ujfSgwPdHWa84txyIgye5gyajQM7w4yH0FqQosYTbfvZU+0dlZ3azku4aFY5oTJ9oR5o9Xsm5u4IfmJ57VUhriN+g06bozisFxcEKVE5Ri4MHDOUqW5JstDfIF0Pesd+J0EB3w+IFaTJ3geBreWcSP5GDwNUx0OmYFGLgv5/v5bkzhTbhwpXRPD8WLMYoEfzrW/dYyS7DOCcvWioc6hEdKAYvQ57//J2Q316tokh4XXObJr9VQgD149p3PE7CwHXCrISiYCkl0W2v0JlFqZ12bRAt2lSQdlwqCLSaz3O9HyqOQePDnJV5o2Iq87wEwB1gg6Dn7mjwuGYp6neDK1xcIF/B2+XLIrkJq+5Yaz2KYXkPyHBXXdAVIgJrviCyiJ9qZMHS07WavUUgsQhWQe3phDPhKusdsKGxjTz1QIu0rdlsKJENyRSXwj5sYIvehN07djRIWr8BSycVJXA90bKaEW+9R5JC/B46AWl+H0DRzeTXLxJkILkVgV2+GSQ96AAnKREK/5VYReyfXIpXROATU5OkDMj/eo+AC+RTr+TaJ8KHtH6pLNaUL7E3EFPBZvPoaV8jT7FS3URuwe0aANJo4ARoi0QBGpSIEdGPx1Tpc2Ml40n1bVdrvdHbytnUVrtUGcj+2iBWoHWmc8BqhWQkp5/ZFQVNJKYuFXpJ8NQf5dLavInxU4L6xADbJeGC8WJjeLNyFP/joFdImyCIVNQAtseBVXKApViSppCq38cZa8YBJI0/CmyThhp3ZQlhUPYO4qn7MyEXax2wKrmCJSw3iTOqFNq04D4+VfCwLYPSyZLGmQRyxge1ucfkNnRUJKOxuk7UwusrwYsoE5nZU0NFETvdBSwrD4R7vgEpRXPmenrBRa4w+VMSq8GGxobEd5scOKAluMFRtIiIUd7KgfCt0Z8HJQYez+A5qs5jMpeFSBb6VNLdKQrcRBQAUdCy12a2Vb4TRTrZWUkxlL3XkdT6hw3LHg4wkl1YCL8KESwWJzdbuMb3mcBEH0yKhx4cVuYS7SdzGDy9yZyfL0Nej1efi7zRKKJulOLf6tGQPa+3B1aSPi7XIMl1TrMecbOj8RxjNcjfVziRYvIHTI9sVFOtWrjagNc17f+JyokTNH2YJ18RQRRbYWcvvy5I55dh9N7hdFtDIdh3zt1xIMNQlc1PVGNyW+0trsM79ndUUod0dXclF1W8Jrj0RFxDREg04sM73wc337uTNwhmued2X4g9RNOTHR+CVIeV5cX0+aSSMhcrop5xFEme+B5m/Un+ezHf2K+lU4Gcw2q6TAcHVWjjfIKuSdC9Vzo7neq1iKC5RSl59SxmrbaTZWKblEp11JD67iKr43IIqqq3Fj2n+b96eN0eA5+WXHTzRLe4xMJCWCFobBrrwXnnDopwy0OnzPR6XCLpZQPN6YX1dKhrN80DcqjY7euWpD5sd4W+5zgNJZ9PGKqPVU28Ui1Fr2WPZrNEq7VsIO4e5NZVw7CPFFXbQ8NDKlBCUh9doMP0LHWdEeHw9aQGKmRa/5m/ed69P9HZ6rFMRTh/VBcxsLinZqFXdOedIQvxGdOvFdnuMUKL+nutrMlEwwj4zsLWlDNgnnZe9Gu/K30D8fkotWV56Z+lKlVuJwPGXfkvXnzWv648hF4fuW7LA/S7MVvqGNCNbTLLcthv1JcD/xgs8CwfXKtHO9kJyrHxfDT8rXzdO5Tc9muzpsbNbK+W53SdC9aqXxss9z3RrgYiPFZruuNfvj4fnc7Va65+Fq8DSd12Z7cbWreLt7C3YHQyrNPNDX5+LF+wvygVHyakdd/nvXmfuJP9MRDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8Pj9/hf6tWqsY6b73MAAAAAElFTkSuQmCC"
+                            data-deferred="1" jsname="Q4LuWd" width="180" height="180" alt="Whatsapp | Icono Gratis"
+                            data-atf="true" data-iml="902.6999999880791">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://accounts.google.com/" target="_blank">
+                        <img src="data:image/png;base64,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"
+                            data-deferred="1" jsname="Q4LuWd" width="240" height="180"
+                            alt="Gmail - Wikipedia, la enciclopedia libre" data-atf="true"
+                            data-iml="1286.2000000178814">
+                    </a>
+                </li>
+            </ul>
+            <p>Todos los derechos reservados a la comisión 29275 &copy</p>
+        </footer>
+    </div>
+    <script src="js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html

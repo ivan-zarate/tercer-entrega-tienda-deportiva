@@ -1,0 +1,264 @@
+@media (max-width:768px) {
+
+    /* Diagramos el index para la nueva medida */
+    .grilla {
+        grid-template-rows: .5fr .4fr 7.5fr 5.8fr 4.5fr .2fr;
+    }
+
+    .banner h1 {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .seccion2 ul {
+        display: flex;
+        flex-direction: column;
+
+        li {
+            padding: 10px;
+
+            img {
+                max-width: 20em;
+                max-height: 20em;
+            }
+        }
+    }
+
+    .seccion3 iframe {
+        height: 259px;
+    }
+
+    .grilla-genero {
+        grid-template-rows: .2fr .4fr 7fr .8fr .45fr .2fr;
+    }
+
+    /* Creamos el style id para poder hacer desaparecer
+     algunos de los productos tanto en el ingreso de productos como dentro del carousel*/
+    #media {
+        display: none;
+    }
+
+    .carousel {
+        .ajuste-carousel img {
+            width: 12em;
+            height: 12em;
+        }
+
+        h3 {
+            padding-left: 22%;
+        }
+    }
+
+    .grilla-contacto {
+        grid-template-rows: .3fr 1.5fr 1.2fr .3fr;
+        grid-template-areas:
+            "nav nav nav nav"
+            "contacto contacto contacto contacto"
+            "unirse unirse unirse unirse"
+            "footer footer footer footer";
+    }
+
+    .contacto {
+        padding-left: 50px;
+        padding-right: 50px;
+
+        .submit {
+            margin-left: 265px;
+            margin-right: 265px;
+        }
+    }
+
+    /* Se coloco el style ID ya que las clases de Bootstrap no permitian modificar la disposicion */
+    #distribucion {
+        display: flex;
+        flex-direction: row;
+
+        div {
+            margin: 10px;
+        }
+    }
+
+    /* Acomodamos todo el html contacto */
+}
+
+@media (max-width:425px) {
+    .grilla {
+        grid-template-rows: .3fr .3fr 15fr 4.2fr 5fr .2fr;
+    }
+
+    .banner h1 {
+        font-size: 25px;
+    }
+
+    .seccion1 {
+        .card {
+            img {
+                max-width: 8em;
+                max-height: 8em;
+            }
+
+            .card-title {
+                font-size: .8rem;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .seccion2 ul {
+        padding-left: 0px;
+
+        li img {
+            max-width: 14em;
+            max-height: 14em;
+        }
+    }
+
+    .pagos {
+        p {
+            font-size: 15px;
+        }
+
+        img {
+            max-width: 8em;
+            max-height: 8em;
+        }
+    }
+
+    .seccion3 iframe {
+        width: 327px;
+        height: 159px;
+        margin-bottom: 15px;
+    }
+
+    .grilla-genero {
+        grid-template-rows: .2fr .3fr 15fr .4fr .2fr;
+        grid-template-areas:
+            "nav nav nav nav"
+            "introduccion introduccion introduccion introduccion"
+            "fondo-genero fondo-genero fondo-genero fondo-genero"
+            "fondo-pago fondo-pago fondo-pago fondo-pago "
+            "footer footer footer footer";
+    }
+
+    .introduccion {
+        background-image: none;
+
+        img {
+            width: 423px;
+            height: 200px;
+        }
+
+        p {
+            display: none;
+        }
+    }
+
+    .carousel {
+        display: none;
+    }
+
+    .fondo-pago {
+        p {
+            padding-bottom: 10px;
+            margin-left: 7px;
+            margin-right: 7px;
+            font-weight: bolder;
+        }
+
+        img {
+            max-width: 12em;
+            max-height: 12em;
+            margin-bottom: 8px;
+        }
+    }
+
+    .grilla-contacto {
+        grid-template-rows: .3fr 2fr 2fr .3fr;
+    }
+
+    .contacto {
+        padding-left: 10px;
+
+        form {
+            .submit {
+                margin: 0 auto;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    }
+
+    .form-control {
+        width: 90vw;
+    }
+
+    .unirse form {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+        .submit2 {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .grilla {
+        grid-template-rows: .4fr .35fr 10.5fr 2.8fr .5fr .4fr;
+    }
+
+    .banner {
+        h1 {
+            font-size: 18px;
+        }
+
+        a {
+            font-size: 15px;
+        }
+    }
+
+    .seccion2 p {
+        font-size: 16px;
+    }
+
+    .seccion3 h2,
+    .seccion3 p {
+        display: none;
+    }
+
+    .seccion3 iframe {
+        width: 289px;
+        height: 129px;
+        margin-top: 25px;
+    }
+
+    .card-footer p {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .grilla-genero {
+        grid-template-rows: .2fr .3fr 15fr .4fr .2fr;
+    }
+
+    .introduccion img {
+        width: 318px;
+        height: 170px;
+    }
+
+    .grilla-contacto {
+        grid-template-rows: .3fr 1.8fr 1.5fr .3fr;
+    }
+
+    .contacto {
+        form {
+            .submit {
+                margin-left: 100px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    }
+
+}

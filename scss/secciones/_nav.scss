@@ -1,0 +1,25 @@
+nav {
+    grid-area: nav;
+    background-color: black;
+
+    .container-fluid {
+        button {
+            background-color: white;
+        }
+
+        .logo img {
+            max-height: 80px;
+            margin-top: 4px;
+        }
+
+        .navbar-nav li a {
+            color: aliceblue;
+
+            &:hover {
+                color: yellow
+            }
+        }
+
+    }
+
+}

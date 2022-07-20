@@ -16,13 +16,15 @@
 
 %img-introduccion {
     width: 20rem;
-    height: 12rem;
+    max-width: 30%;
+    height: fit-content;
 }
 
 %parrafo-introduccion {
     margin-left: 20vw;
-    margin-top: 4rem;
+    margin-top: 6%;
     font-size: 50px;
+    max-width: 70%;
     font-family: $grape-nuts;
     font-style: italic;
     font-weight: bolder;

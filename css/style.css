@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0; }
@@ -9,7 +8,7 @@
 
 .grilla footer,
 .grilla-genero footer,
-.grilla-contacto footer, .banner, .seccion3, .card, .card .card-body, .fondo-pago, .contacto, .contacto form, .unirse {
+.grilla-contacto footer, .banner, .seccion3, .card, .card .card-body, .fondo-pago, .contacto, .contacto form, .unirse, .unirse form {
   display: flex;
   flex-direction: column; }
 
@@ -20,12 +19,14 @@
 
 .introduccion img {
   width: 20rem;
-  height: 12rem; }
+  max-width: 30%;
+  height: fit-content; }
 
-.introduccion p {
+.introduccion h1 {
   margin-left: 20vw;
-  margin-top: 4rem;
+  margin-top: 6%;
   font-size: 50px;
+  max-width: 70%;
   font-family: "Grape Nuts", cursive;
   font-style: italic;
   font-weight: bolder;
@@ -34,14 +35,14 @@
 .grilla {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: .5fr .5fr 5.5fr 2.6fr 4.8fr .5fr;
+  grid-template-rows: .5fr .5fr 5.5fr 2.6fr 4.4fr .5fr;
   grid-template-areas: "nav nav nav nav" "banner banner banner banner" "seccion1 seccion1 seccion1 seccion1" "seccion2 seccion2 seccion2 seccion2" "seccion3 seccion3 seccion3 seccion3" "footer footer footer footer"; }
 
 .promociones {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 3fr 3fr;
-  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  grid-auto-rows: 20rem;
+  gap: 10px;
   justify-items: center;
   justify-content: center; }
 
@@ -52,12 +53,13 @@
   background-color: black;
   text-align: center;
   align-items: center;
-  color: white; }
+  color: white;
+  width: 100%; }
 
 .grilla-genero {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: .3fr .8fr 7.5fr 1.6fr .8fr .5fr;
+  grid-template-rows: .3fr .8fr 5.8fr 1.6fr .8fr .5fr;
   grid-template-areas: "nav nav nav nav" "introduccion introduccion introduccion introduccion" "fondo-genero fondo-genero fondo-genero fondo-genero" "carousel carousel carousel carousel" "fondo-pago fondo-pago fondo-pago fondo-pago " "footer footer footer footer"; }
 
 .promociones-genero {
@@ -65,8 +67,8 @@
   display: grid;
   justify-items: center;
   justify-content: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: .8fr .8fr .8fr;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-auto-rows: 24rem;
   gap: 16px; }
 
 .grilla-contacto {
@@ -120,7 +122,7 @@ nav {
 
 .seccion1 {
   grid-area: seccion1;
-  background: url("../img/index.png") no-repeat fixed;
+  background: url("https://res.cloudinary.com/drpf9pkyr/image/upload/v1658103156/Proyecto-Coder/index_nong7r.webp") no-repeat fixed;
   background-size: cover; }
   .seccion1 .descuentos {
     font-size: 2em;
@@ -150,12 +152,12 @@ nav {
         max-height: 14em; }
         .seccion2 ul li img:hover {
           transform: scale(1.2);
-          transition: .3s; }
+          transition: .5s; }
 
 .seccion3 {
   grid-area: seccion3;
   text-align: center;
-  background: url("../img/index.png") no-repeat fixed;
+  background: url("https://res.cloudinary.com/drpf9pkyr/image/upload/v1658103156/Proyecto-Coder/index_nong7r.webp") no-repeat fixed;
   background-size: cover; }
   .seccion3 h2 {
     font-size: 2em;
@@ -167,7 +169,8 @@ nav {
     color: black;
     text-shadow: 3px 3px 4px gray; }
   .seccion3 iframe {
-    width: 65vw; }
+    width: 55vw;
+    height: 55vh; }
 
 .card-footer ul {
   justify-content: center;
@@ -186,7 +189,7 @@ nav {
     max-width: 10em;
     max-height: 10em; }
     .card img:hover {
-      transform: scale(1.2);
+      transform: scale(1.3);
       transition: .3s; }
   .card .card-body {
     align-items: center;
@@ -213,7 +216,9 @@ nav {
 
 .introduccion {
   grid-area: introduccion;
-  border: 2px solid black; }
+  border: 2px solid black;
+  max-width: 100%;
+  height: fit-content; }
 
 .hombre {
   background: #000a24;
@@ -223,7 +228,7 @@ nav {
   background: #9f0404;
   background: linear-gradient(90deg, #9f0404 23%, #790978 55%, #cf0c93 92%); }
 
-.niños {
+.ninos {
   background: #d4e004;
   background: linear-gradient(90deg, #d4e004 23%, #0f7909 55%, #cf0c0c 92%); }
 
@@ -249,7 +254,7 @@ nav {
       border: solid 1px black; }
       .carousel .ajuste-carousel img:hover {
         transform: scale(1.3, 1.3);
-        transition: .3s;
+        transition: .5s;
         border: solid 1px black; }
 
 .fondo-pago {
@@ -263,9 +268,10 @@ nav {
 .contacto {
   grid-area: contacto;
   padding: 20px;
-  padding-left: 90px;
-  background: url("../img/contacto.jpeg") no-repeat fixed;
-  background-size: cover; }
+  padding-left: 70px;
+  background: url("https://res.cloudinary.com/drpf9pkyr/image/upload/v1658103155/Proyecto-Coder/contacto_c1hil5.jpg") no-repeat fixed;
+  background-size: cover;
+  min-height: 80vh; }
   .contacto h1 {
     padding-left: 20px;
     margin-bottom: 30px;
@@ -283,11 +289,13 @@ nav {
     font-family: "Roboto Serif", serif; }
   .contacto a {
     padding-left: 20px;
-    padding-bottom: 20px;
     font-weight: bold;
-    color: #266302; }
+    color: #266302;
+    width: 15rem; }
   .contacto form {
-    padding: 10px; }
+    padding: 10px;
+    margin-top: 20px;
+    max-width: 80%; }
     .contacto form .form-floating input {
       margin-top: 10px;
       margin-bottom: 10px; }
@@ -304,35 +312,36 @@ nav {
         box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4); }
     .contacto form .submit {
       background-color: white;
-      padding: 3px 8px 3px 8px;
-      margin-left: 165px;
-      margin-right: 165px; }
+      padding: 5px 22px 5px 22px;
+      margin: 0 auto; }
       .contacto form .submit:hover {
         background-color: #f4f810;
         color: black; }
 
 .unirse {
   grid-area: unirse;
-  align-items: center;
   padding: 20px;
-  background: url("../img/contacto.jpeg") no-repeat fixed;
-  background-size: cover; }
-  .unirse h1 {
+  background: url("https://res.cloudinary.com/drpf9pkyr/image/upload/v1658103155/Proyecto-Coder/contacto_c1hil5.jpg") no-repeat fixed;
+  background-size: cover;
+  min-height: 80vh; }
+  .unirse h2 {
     font-family: "Grape Nuts", cursive;
     font-size: 50px;
     padding-bottom: 30px;
-    font-weight: bold; }
-  .unirse input:focus {
-    border: solid 2px darkblue;
-    outline: none;
-    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4); }
+    font-weight: bold;
+    margin: 0 auto; }
+  .unirse form {
+    max-width: 80%; }
+    .unirse form input:focus {
+      border: solid 2px darkblue;
+      outline: none;
+      box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4); }
   .unirse .submit2 {
     border-radius: 50px;
     padding: 8px 15px 8px 15px;
     font-family: "Grape Nuts", cursive;
     font-size: 25px;
-    margin-left: 250px;
-    margin-right: 250px;
+    margin: 0 auto;
     font-weight: bold;
     background-color: white; }
     .unirse .submit2:hover {
@@ -344,7 +353,7 @@ nav {
 @media (max-width: 768px) {
   /* Diagramos el index para la nueva medida */
   .grilla {
-    grid-template-rows: .5fr .4fr 7.5fr 5.8fr 4.5fr .2fr; }
+    grid-template-rows: .5fr .4fr 9.5fr 5.8fr 4fr .2fr; }
   .banner h1 {
     margin-left: 15px;
     margin-right: 15px; }
@@ -356,10 +365,8 @@ nav {
       .seccion2 ul li img {
         max-width: 20em;
         max-height: 20em; }
-  .seccion3 iframe {
-    height: 259px; }
   .grilla-genero {
-    grid-template-rows: .2fr .4fr 7fr .8fr .45fr .2fr; }
+    grid-template-rows: .2fr .3fr 7fr .8fr .45fr .2fr; }
   /* Creamos el style id para poder hacer desaparecer
      algunos de los productos tanto en el ingreso de productos como dentro del carousel*/
   #media {
@@ -372,31 +379,30 @@ nav {
   .grilla-contacto {
     grid-template-rows: .3fr 1.5fr 1.2fr .3fr;
     grid-template-areas: "nav nav nav nav" "contacto contacto contacto contacto" "unirse unirse unirse unirse" "footer footer footer footer"; }
-  .contacto {
-    padding-left: 50px;
-    padding-right: 50px; }
-    .contacto .submit {
-      margin-left: 265px;
-      margin-right: 265px; }
+  .contacto form {
+    padding-left: 5rem; }
   /* Se coloco el style ID ya que las clases de Bootstrap no permitian modificar la disposicion */
-  #distribucion {
-    display: flex;
-    flex-direction: row; }
-    #distribucion div {
-      margin: 10px; }
+  .unirse form {
+    padding-left: 5rem; }
+    .unirse form #distribucion {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      .unirse form #distribucion div {
+        margin: 10px; }
+    .unirse form .checkbox {
+      margin-left: -.1em; }
+    .unirse form .submit2 {
+      margin-left: 15rem; }
   /* Acomodamos todo el html contacto */ }
 
-@media (max-width: 425px) {
+@media (max-width: 480px) {
   .grilla {
-    grid-template-rows: .3fr .3fr 15fr 4.2fr 5fr .2fr; }
+    grid-template-rows: .3fr .3fr 17fr 4fr 5fr .2fr; }
+  .navbar .form-control {
+    width: 78vw; }
   .banner h1 {
     font-size: 25px; }
-  .seccion1 .card img {
-    max-width: 8em;
-    max-height: 8em; }
-  .seccion1 .card .card-title {
-    font-size: .8rem;
-    font-weight: bold; }
   .seccion2 ul {
     padding-left: 0px; }
     .seccion2 ul li img {
@@ -408,18 +414,19 @@ nav {
     max-width: 8em;
     max-height: 8em; }
   .seccion3 iframe {
-    width: 327px;
-    height: 159px;
+    width: 70vw;
+    height: 55vh;
     margin-bottom: 15px; }
   .grilla-genero {
-    grid-template-rows: .2fr .3fr 15fr .4fr .2fr;
+    grid-template-rows: .2fr .3fr 16fr .4fr .2fr;
     grid-template-areas: "nav nav nav nav" "introduccion introduccion introduccion introduccion" "fondo-genero fondo-genero fondo-genero fondo-genero" "fondo-pago fondo-pago fondo-pago fondo-pago " "footer footer footer footer"; }
   .introduccion {
     background-image: none; }
     .introduccion img {
-      width: 423px;
-      height: 200px; }
-    .introduccion p {
+      height: 220px;
+      width: 30rem;
+      max-width: 100%; }
+    .introduccion h1 {
       display: none; }
   .carousel {
     display: none; }
@@ -436,22 +443,30 @@ nav {
     grid-template-rows: .3fr 2fr 2fr .3fr; }
   .contacto {
     padding-left: 10px; }
-    .contacto form .submit {
-      margin: 0 auto;
-      padding-left: 20px;
-      padding-right: 20px; }
+    .contacto form {
+      padding-left: 1rem; }
+      .contacto form .submit {
+        margin-right: 5rem; }
   .form-control {
     width: 90vw; }
   .unirse form {
+    padding-left: 1rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 0 auto; }
+    .unirse form .genero {
+      margin-left: -5em; }
+    .unirse form .checkbox {
+      margin-left: 0rem; }
     .unirse form .submit2 {
       margin: 0 auto; } }
 
 @media (max-width: 320px) {
   .grilla {
-    grid-template-rows: .4fr .35fr 10.5fr 2.8fr .5fr .4fr; }
+    grid-template-rows: .4fr .35fr 9fr 2fr .5fr .4fr; }
+  .navbar .form-control {
+    width: 68vw; }
   .banner h1 {
     font-size: 18px; }
   .banner a {
@@ -462,8 +477,7 @@ nav {
   .seccion3 p {
     display: none; }
   .seccion3 iframe {
-    width: 289px;
-    height: 129px;
+    height: 35vh;
     margin-top: 25px; }
   .card-footer p {
     margin-left: 8px;
@@ -474,8 +488,11 @@ nav {
     width: 318px;
     height: 170px; }
   .grilla-contacto {
-    grid-template-rows: .3fr 1.8fr 1.5fr .3fr; }
+    grid-template-rows: .2fr 1.8fr 1.6fr .3fr; }
   .contacto form .submit {
-    margin-left: 100px;
-    padding-left: 20px;
-    padding-right: 20px; } }
+    margin-left: 5rem;
+    margin-right: 0rem; }
+  .unirse form .ingresos {
+    margin-left: -.5rem; }
+  .unirse form .genero {
+    margin-left: -1.2rem; } }

@@ -2,9 +2,10 @@
     grid-area: contacto;
     @extend %estilo-flexcolumn;
     padding: 20px;
-    padding-left: 90px;
-    background: url("../img/contacto.jpeg") no-repeat fixed;
+    padding-left: 70px;
+    background: url("https://res.cloudinary.com/drpf9pkyr/image/upload/v1658103155/Proyecto-Coder/contacto_c1hil5.jpg") no-repeat fixed;
     background-size: cover;
+    min-height: 80vh;
 
     h1 {
         padding-left: 20px;
@@ -29,14 +30,16 @@
 
     a {
         padding-left: 20px;
-        padding-bottom: 20px;
         font-weight: bold;
         color: rgb(38, 99, 2);
+        width: 15rem;
     }
 
     form {
         @extend %estilo-flexcolumn;
         padding: 10px;
+        margin-top: 20px;
+        max-width: 80%;
 
         .form-floating {
             input {
@@ -64,9 +67,8 @@
 
         .submit {
             background-color: white;
-            padding: 3px 8px 3px 8px;
-            margin-left: 165px;
-            margin-right: 165px;
+            padding: 5px 22px 5px 22px;
+            margin: 0 auto;
 
             &:hover {
                 background-color: rgb(244, 248, 16);
@@ -79,23 +81,29 @@
 .unirse {
     grid-area: unirse;
     @extend %estilo-flexcolumn;
-    align-items: center;
     padding: 20px;
-    background: url("../img/contacto.jpeg") no-repeat fixed;
+    background: url("https://res.cloudinary.com/drpf9pkyr/image/upload/v1658103155/Proyecto-Coder/contacto_c1hil5.jpg") no-repeat fixed;
     background-size: cover;
+    min-height: 80vh;
 
-    h1 {
+    h2 {
         font-family: $grape-nuts;
         font-size: 50px;
         padding-bottom: 30px;
         font-weight: bold;
+        margin: 0 auto;
     }
 
-    input {
-        &:focus {
-            border: solid 2px darkblue;
-            outline: none;
-            box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+    form {
+        max-width: 80%;
+        @extend %estilo-flexcolumn;
+
+        input {
+            &:focus {
+                border: solid 2px darkblue;
+                outline: none;
+                box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+            }
         }
     }
 
@@ -104,8 +112,7 @@
         padding: 8px 15px 8px 15px;
         font-family: $grape-nuts;
         font-size: 25px;
-        margin-left: 250px;
-        margin-right: 250px;
+        margin: 0 auto;
         font-weight: bold;
         background-color: white;
 

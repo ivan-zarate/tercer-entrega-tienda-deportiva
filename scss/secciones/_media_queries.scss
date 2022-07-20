@@ -2,7 +2,7 @@
 
     /* Diagramos el index para la nueva medida */
     .grilla {
-        grid-template-rows: .5fr .4fr 7.5fr 5.8fr 4.5fr .2fr;
+        grid-template-rows: .5fr .4fr 9.5fr 5.8fr 4fr .2fr;
     }
 
     .banner h1 {
@@ -24,12 +24,8 @@
         }
     }
 
-    .seccion3 iframe {
-        height: 259px;
-    }
-
     .grilla-genero {
-        grid-template-rows: .2fr .4fr 7fr .8fr .45fr .2fr;
+        grid-template-rows: .2fr .3fr 7fr .8fr .45fr .2fr;
     }
 
     /* Creamos el style id para poder hacer desaparecer
@@ -59,49 +55,52 @@
     }
 
     .contacto {
-        padding-left: 50px;
-        padding-right: 50px;
-
-        .submit {
-            margin-left: 265px;
-            margin-right: 265px;
+        form {
+            padding-left: 5rem;
         }
     }
 
     /* Se coloco el style ID ya que las clases de Bootstrap no permitian modificar la disposicion */
-    #distribucion {
-        display: flex;
-        flex-direction: row;
+    .unirse {
+        form {
+            padding-left: 5rem;
 
-        div {
-            margin: 10px;
+            #distribucion {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                div {
+                    margin: 10px;
+                }
+            }
+
+            .checkbox {
+                margin-left: -.1em;
+            }
+
+            .submit2 {
+                margin-left: 15rem;
+            }
         }
     }
 
     /* Acomodamos todo el html contacto */
 }
 
-@media (max-width:425px) {
+@media (max-width:480px) {
     .grilla {
-        grid-template-rows: .3fr .3fr 15fr 4.2fr 5fr .2fr;
+        grid-template-rows: .3fr .3fr 17fr 4fr 5fr .2fr;
+    }
+
+    .navbar {
+        .form-control {
+            width: 78vw;
+        }
     }
 
     .banner h1 {
         font-size: 25px;
-    }
-
-    .seccion1 {
-        .card {
-            img {
-                max-width: 8em;
-                max-height: 8em;
-            }
-
-            .card-title {
-                font-size: .8rem;
-                font-weight: bold;
-            }
-        }
     }
 
     .seccion2 ul {
@@ -125,13 +124,13 @@
     }
 
     .seccion3 iframe {
-        width: 327px;
-        height: 159px;
+        width: 70vw;
+        height: 55vh;
         margin-bottom: 15px;
     }
 
     .grilla-genero {
-        grid-template-rows: .2fr .3fr 15fr .4fr .2fr;
+        grid-template-rows: .2fr .3fr 16fr .4fr .2fr;
         grid-template-areas:
             "nav nav nav nav"
             "introduccion introduccion introduccion introduccion"
@@ -144,11 +143,12 @@
         background-image: none;
 
         img {
-            width: 423px;
-            height: 200px;
+            height: 220px;
+            width: 30rem;
+            max-width: 100%;
         }
 
-        p {
+        h1 {
             display: none;
         }
     }
@@ -180,10 +180,10 @@
         padding-left: 10px;
 
         form {
+            padding-left: 1rem;
+
             .submit {
-                margin: 0 auto;
-                padding-left: 20px;
-                padding-right: 20px;
+                margin-right: 5rem;
             }
         }
     }
@@ -192,20 +192,38 @@
         width: 90vw;
     }
 
-    .unirse form {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-
-        .submit2 {
+    .unirse {
+        form {
+            padding-left: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             margin: 0 auto;
+
+            .genero {
+                margin-left: -5em;
+            }
+
+            .checkbox {
+                margin-left: 0rem;
+            }
+
+            .submit2 {
+                margin: 0 auto;
+            }
         }
     }
 }
 
 @media (max-width:320px) {
     .grilla {
-        grid-template-rows: .4fr .35fr 10.5fr 2.8fr .5fr .4fr;
+        grid-template-rows: .4fr .35fr 9fr 2fr .5fr .4fr;
+    }
+
+    .navbar {
+        .form-control {
+            width: 68vw;
+        }
     }
 
     .banner {
@@ -228,8 +246,7 @@
     }
 
     .seccion3 iframe {
-        width: 289px;
-        height: 129px;
+        height: 35vh;
         margin-top: 25px;
     }
 
@@ -248,17 +265,27 @@
     }
 
     .grilla-contacto {
-        grid-template-rows: .3fr 1.8fr 1.5fr .3fr;
+        grid-template-rows: .2fr 1.8fr 1.6fr .3fr;
     }
 
     .contacto {
         form {
             .submit {
-                margin-left: 100px;
-                padding-left: 20px;
-                padding-right: 20px;
+                margin-left: 5rem;
+                margin-right: 0rem;
             }
         }
     }
 
+    .unirse {
+        form {
+            .ingresos {
+                margin-left: -.5rem;
+            }
+
+            .genero {
+                margin-left: -1.2rem;
+            }
+        }
+    }
 }

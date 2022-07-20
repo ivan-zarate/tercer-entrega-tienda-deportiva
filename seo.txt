@@ -2,3 +2,4 @@ Agregue keyword y descripcion a cada una de las paginas.
 Cree la carpeta pages para englobar a hombre, mujer, niños y contacto.
 A los titulos les agregue el complemento | para que tenga la pagina principal y su correspondiente pagina.
 Le agregue un sitemap.
+Puse todas las imagenes en Cloudinary.

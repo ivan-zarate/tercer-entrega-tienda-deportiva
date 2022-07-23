@@ -30,21 +30,21 @@
             font-weight: bold;
             color: red;
         }
+    }
 
-        form {
-            @extend %estilo-flexrow;
-            align-items: center;
-            padding: 8px;
+    form {
+        @extend %estilo-flexrow;
+        align-items: center;
+        padding: 8px;
 
-            select {
-                background-color: blanchedalmond;
-                margin: 3px;
-            }
+        select {
+            background-color: blanchedalmond;
+            margin: 3px;
+        }
 
-            .zapatillas {
-                padding-left: 14px;
-                padding-right: 14px;
-            }
+        .zapatillas {
+            padding-left: 14px;
+            padding-right: 14px;
         }
     }
 }
